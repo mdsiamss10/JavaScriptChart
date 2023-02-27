@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Graphiam | 2.0</title>
+  </head>
+  <body>
+    <h2 style="text-align: center; margin: 5px 0; padding: 2px 10px">
+      Make the Graph <b>Yours</b>
+      <h6 style="text-align: center">made with ❤️ by <b>Siam</b></h6>
+    </h2>
+    <br />
+    <div class="container">
+      <form>
+        <div class="grid">
+          <label for="xAxisTitle"
+            >X Axis Title: <input type="text" id="xAxisTitle" name="xAxisTitle"
+          /></label>
+
+          <label for="xAxisData"
+            >X Axis Data:
+            <input type="text" id="xAxisData" name="xAxisData" /><br
+          /></label>
+        </div>
+
+        <div class="grid">
+          <label for="yAxisTitle"
+            >Y Axis Title: <input type="text" id="yAxisTitle" name="yAxisTitle"
+          /></label>
+
+          <label for="yAxisData"
+            >Y Axis Data: <input type="text" id="yAxisData" name="yAxisData"
+          /></label>
+        </div>
+        <fieldset>
+          <label for="switch">
+            <input type="checkbox" id="switch" name="switch" role="switch" />
+            Line tension
+          </label>
+        </fieldset>
+        <button type="button" onclick="createChart()">Submit</button>
+      </form>
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <br />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
